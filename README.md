@@ -117,3 +117,6 @@ Expertos en simulación de phishing y seguridad humana.
 Sitio web: https://hack-block.com
 
 *Licencia: MIT.*
+
+## Contributors
+@JorgeRosbel - Mejoras en la documentación de instalación y cambios menores
