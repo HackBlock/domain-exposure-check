@@ -49,7 +49,7 @@ El resultado se consolida en un Risk Score (0-100) con niveles: BAJO, MEDIO, ALT
 
 ```bash
 # Clonar repositorio
-git clone [https://github.com/HackBlock/domain-exposure-check.git](https://github.com/HackBlock/domain-exposure-check.git)
+git clone https://github.com/HackBlock/domain-exposure-check.git
 cd domain-exposure-check
 
 # Instalar dependencias
