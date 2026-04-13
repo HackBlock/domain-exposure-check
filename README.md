@@ -86,7 +86,7 @@ El check de typosquatting realiza resoluciones DNS, lo cual deja trazas estánda
 Uso responsable: Utiliza esta herramienta solo en dominios sobre los que tienes autorización o con fines de investigación legítima.
 
 # Por HackBlock
-Especialistas en simulacros de phishing de alta fidelidad y consultoría de ingeniería social.
+Expertos en simulación de phishing y seguridad humana.
 Sitio web: https://hack-block.com
 
 *Licencia: MIT.*
