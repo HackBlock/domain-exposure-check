@@ -82,11 +82,10 @@ Ahora puedes ejecutar desde cualquier ruta:
 ```bash
 domain-check empresa.com
 ```
-
 Requisito: Python 3.9+ y la librería dnspython.
-```
 # Uso
 Análisis básico
+
 ```bash
 python domain-exposure-check.py empresa.com
 ```
@@ -94,7 +93,7 @@ python domain-exposure-check.py empresa.com
 Exportación para integraciones (JSON)
 ```bash
 python domain-exposure-check.py empresa.com --json
-```bash
+```
 
 Máximo detalle (API Keys)
 Puedes configurar la clave como variable de entorno (HUNTER_API_KEY) o pasarla como parámetro:
