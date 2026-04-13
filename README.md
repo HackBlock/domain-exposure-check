@@ -119,4 +119,4 @@ Sitio web: https://hack-block.com
 *Licencia: MIT.*
 
 ## Contributors
-@JorgeRosbel - Mejoras en la documentación de instalación y cambios menores
+- [@JorgeRosbel](https://github.com/JorgeRosbel) – Mejoras en la documentación de instalación y pequeños ajustes
