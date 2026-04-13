@@ -7,15 +7,12 @@ Versión: 1.0.0
 import argparse
 import dns.resolver
 import json
-import re
 import socket
-import sys
 import os
 from dataclasses import dataclass, field
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 import urllib.request
-import urllib.error
 
 # ──────────────────────────────────────────────────────────────
 # UI & Estética (Colores y Formato)
@@ -170,8 +167,8 @@ def check_hunter(domain, key):
 
 def print_banner():
     print(f"\n{UI.CYAN}{bold('╔══════════════════════════════════════════════════════════╗')}")
-    print(f"║         {bold('domain-exposure-check')}  •  by {UI.CYAN}HackBlock{UI.CYAN}              ║")
-    print(f"║         {UI.GRAY}Analizador de superficie de ataque OSINT{UI.CYAN}              ║")
+    print(f"║         {bold('domain-exposure-check')}  •  by {UI.CYAN}HackBlock{UI.CYAN}           ║")
+    print(f"║         {UI.GRAY}Analizador de superficie de ataque OSINT{UI.CYAN}         ║")
     print(f"╚══════════════════════════════════════════════════════════╝{UI.RESET}\n")
 
 def render_report(report: ScanReport):

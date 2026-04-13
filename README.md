@@ -52,26 +52,54 @@ El resultado se consolida en un Risk Score (0-100) con niveles: BAJO, MEDIO, ALT
 git clone https://github.com/HackBlock/domain-exposure-check.git
 cd domain-exposure-check
 
+# Crear entorno virtual (recomendado)
+python3 -m venv venv
+source venv/bin/activate  # En Linux/macOS
+# En Windows: venv\Scripts\activate
+
 # Instalar dependencias
 pip install -r requirements.txt
+
+# Configurar API Key (opcional)
+# Agrega esta línea a tu ~/.bashrc o ~/.zshrc:
+export HUNTER_API_KEY="tu-api-key-aqui"
+```
+
+### Uso desde cualquier ruta (Alias)
+
+Para ejecutar la herramienta desde cualquier directorio sin activar el entorno virtual manualmente, agrega un alias a tu `~/.bashrc` o `~/.zshrc`:
+
+```bash
+alias domain-check="/home/<tu-usuario>/domain-exposure-check/venv/bin/python /home/<tu-usuario>/domain-exposure-check/domain-exposure-check.py"
+```
+
+Luego recarga tu configuración:
+```bash
+source ~/.bashrc  # o source ~/.zshrc
+```
+
+Ahora puedes ejecutar desde cualquier ruta:
+```bash
+domain-check empresa.com
+```
 
 Requisito: Python 3.9+ y la librería dnspython.
 ```
 # Uso
 Análisis básico
 ```bash
-python domain_exposure_check.py empresa.com
+python domain-exposure-check.py empresa.com
 ```
 
 Exportación para integraciones (JSON)
 ```bash
-python domain_exposure_check.py empresa.com --json
+python domain-exposure-check.py empresa.com --json
 ```bash
 
 Máximo detalle (API Keys)
 Puedes configurar la clave como variable de entorno (HUNTER_API_KEY) o pasarla como parámetro:
 ```bash
-python domain_exposure_check.py empresa.com --hunter-key TU_KEY_AQUÍ
+python domain-exposure-check.py empresa.com --hunter-key TU_KEY_AQUÍ
 ```
 # Casos de uso
 **Auditoría Inicial:** Primera toma de contacto técnica en un engagement de concienciación.
